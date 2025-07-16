@@ -79,7 +79,9 @@ Returns:
 
 # 📦 Inventory Service (port 3000)
 
+```http
 GET /products?page=1&limit=5&category=Electronics
+```
 Returns paginated and filtered product list.
 ##
 GET /products/:id
