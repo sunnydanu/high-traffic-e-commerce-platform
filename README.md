@@ -134,9 +134,12 @@ Response:
 ```
 # ⚙️ Kafka Event Flow
 
-Event	Triggered From	Consumed By
-order_placed	order-service	event-consumer
-stock_updated	(future upgrade)	inventory /  
+
+| Event          | Triggered From     | Consumed By         |
+|----------------|--------------------|----------------------|
+| `order_placed` | `order-service`    | `event-consumer`     |
+| *(future)* `stock_updated` | `event-consumer`    | *(UI / notifications / cache update)* |
+
 
 # 🧪 Load Testing
 Use Artillery or k6:
