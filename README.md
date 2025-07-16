@@ -84,29 +84,38 @@ GET /products?page=1&limit=5&category=Electronics
 ```
 Returns paginated and filtered product list.
 ##
+```http
 GET /products/:id
+```
 Returns product by ID (cached via Redis).
 ##
+```http
 POST /products (Admin only)
+```
 Add a product. Requires JWT.
 ##
+```http
 PUT /products/:id (Admin only)
+```
 Update product details.
 
-
+```http
 DELETE /products/:id (Admin only)
+```
 Remove product.
 ##
+```http
 PATCH /products/:id/stock
+```
 Atomic stock update.
 
 # 🛒 Order Service (port 3001)
-
+```http
 POST /orders
+```
 Simulates a user placing an order. Emits a Kafka event.
 
 ```json
-
 {
   "user_id": "user_123",
   "items": [
