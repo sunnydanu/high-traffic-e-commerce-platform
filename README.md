@@ -55,7 +55,7 @@ Redis: localhost:6379
 
 PostgreSQL: localhost:5432
 
-Auth :  localhost:3002
+Auth :  http://localhost:3002
 
 📚 API Reference
 🔐 Auth
