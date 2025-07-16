@@ -55,6 +55,8 @@ Redis: localhost:6379
 
 PostgreSQL: localhost:5432
 
+Auth :  localhost:3002
+
 📚 API Reference
 🔐 Auth
 If using auth-service:
@@ -138,7 +140,7 @@ ecommerce-flash-backend/
 │   ├── inventory-service/
 │   ├── order-service/
 │   ├── event-consumer/
-│   └── auth-service/       ← optional
+│   └── auth-service/       
 ├── docker-compose.yml
 ├── .env.example
 └── README.md
